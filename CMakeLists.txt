@@ -61,3 +61,6 @@ set(sources re2/set.cc
 
 add_library(re2 STATIC ${sources})
 
+add_executable(myre2test test.cc)
+
+target_link_libraries(myre2test re2)
