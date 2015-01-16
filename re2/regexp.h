@@ -323,6 +323,10 @@ class Regexp {
       return submany_;
   }
 
+#ifdef _WIN32
+#undef min
+#undef max
+#endif
   int min() { DCHECK_EQ(op_, kRegexpRepeat); return min_; }
   int max() { DCHECK_EQ(op_, kRegexpRepeat); return max_; }
   Rune rune() { DCHECK_EQ(op_, kRegexpLiteral); return rune_; }

@@ -55,7 +55,6 @@ set(sources re2/set.cc
             util/stringpiece.cc
             util/thread.cc
             util/valgrind.cc
-            util/pcre.cc
             util/stringprintf.cc
             )
 
